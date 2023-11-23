@@ -1,0 +1,102 @@
+.nav-item.active .nav-link {
+    background-color: black;
+    color: white;
+    border-radius: 40%;
+
+  }
+  
+  .icon:hover {
+    background-color: gray;
+    border-radius: 50%;
+    padding: 5px; 
+  }
+
+  @media (max-width: 1190px) {
+    .form-control {
+      width: 325px !important;
+    }
+  }
+
+/* Cuando la pantalla tenga un ancho de 1097px o menos */
+@media (max-width: 1097px) {
+  /* Los iconos tendrán un margen a la izquierda más pequeño */
+  .responsive-icon {
+    margin-left: 1rem !important;
+  }
+
+  /* El botón de "Cerrar sesión" se convertirá en un icono */
+  .responsive-button {
+    width: 50px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Oculta el texto del botón */
+  .responsive-button .button-text {
+    display: none;
+  }
+
+  /* Centra el icono horizontalmente */
+  .responsive-button svg {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-item:not(.always-show):not(.responsive-icon) {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Asegura que el logo siempre esté visible */
+  .navbar-nav .nav-item.always-show.d-flex {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 756px) {
+  /* Reduce la distancia entre el logo y el campo de búsqueda */
+  .navbar-nav .nav-item.always-show {
+    margin-right: 1px !important;
+    margin-left: 1px !important;
+  }
+
+  /* Reduce el ancho del campo de búsqueda */
+  .form-control {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 574px) {
+  /* Oculta el botón de cerrar sesión */
+  .nav-item.responsive-button {
+    display: none !important;
+  }
+
+  /* Oculta la foto de perfil */
+  .nav-item.always-show:not(:first-child) {
+    display: none !important;
+  }
+}
+
+@media (max-width: 421px) {
+
+
+  /* Reduce el ancho del campo de búsqueda */
+  .form-control {
+    width: 125px !important;
+  }
+}
+
+
+
